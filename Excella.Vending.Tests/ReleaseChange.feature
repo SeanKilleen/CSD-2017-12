@@ -5,6 +5,7 @@
 
 Scenario: Get Correct Change Back
 	Given I have inserted a quarter
-	And I have inserted a quarter
-	When I release the change
-	Then I should receive 50 cents
+	When I insert a quarter
+	And I insert another quarter
+	And I release the change
+	Then I should receive 75 cents
